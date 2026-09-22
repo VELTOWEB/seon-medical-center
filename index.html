@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="세온 메디컬센터 — VELTOWEB 포트폴리오를 위한 프리미엄 가상 병원 웹사이트 샘플입니다.">
+  <meta name="theme-color" content="#071b2a">
+  <title>세온 메디컬센터 | Premium Medical Experience</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23071b2a'/%3E%3Cpath d='M19 24c0-5 4-9 9-9h17v8H29a2 2 0 0 0 0 4h7c6 0 10 4 10 10s-5 12-12 12H18v-8h16c3 0 4-2 4-4s-1-3-4-3h-6c-5 0-9-4-9-10Z' fill='%23a8eadf'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body class="is-loading">
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <div class="intro" id="intro" aria-label="세온 메디컬센터 인트로">
+    <div class="intro__curtain intro__curtain--top" aria-hidden="true"></div>
+    <div class="intro__curtain intro__curtain--bottom" aria-hidden="true"></div>
+    <div class="intro__glow" aria-hidden="true"></div>
+    <div class="intro__content">
+      <div class="intro__mark" aria-hidden="true"><span>S</span></div>
+      <p class="intro__name" aria-label="SEON">
+        <span style="--i:0">S</span><span style="--i:1">E</span><span style="--i:2">O</span><span style="--i:3">N</span>
+      </p>
+      <p class="intro__sub">MEDICAL CENTER</p>
+      <div class="intro__line"><span></span></div>
+      <p class="intro__message">YOUR HEALTH, OUR PRIORITY</p>
+    </div>
+    <button class="intro__skip" type="button" aria-label="인트로 건너뛰기">SKIP</button>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <div class="pointer-glow" id="pointerGlow" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="세온 메디컬센터 홈">
+      <span class="brand__mark">S</span>
+      <span class="brand__text"><strong>세온</strong><small>MEDICAL CENTER</small></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="주요 메뉴">
+      <a href="#about">병원소개</a>
+      <a href="#doctors">의료진 소개</a>
+      <a href="#services">진료과목</a>
+      <a href="#special">특화진료</a>
+      <a href="#space">병원시설</a>
+      <a href="#location">오시는 길</a>
+    </nav>
+
+    <a class="header-cta magnetic" href="#contact"><span>진료 예약</span><i aria-hidden="true">↗</i></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__orb" aria-hidden="true"></div>
+    <p class="mobile-menu__label">MENU · SEON MEDICAL</p>
+    <nav aria-label="모바일 메뉴">
+      <a href="#about"><span>01</span>병원소개</a>
+      <a href="#doctors"><span>02</span>의료진 소개</a>
+      <a href="#services"><span>03</span>진료과목</a>
+      <a href="#special"><span>04</span>특화진료</a>
+      <a href="#space"><span>05</span>병원시설</a>
+      <a href="#location"><span>06</span>오시는 길</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <p>상담 문의</p><a href="tel:0200000000">02.000.0000</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero__ambient hero__ambient--one" data-parallax="-0.035" aria-hidden="true"></div>
+      <div class="hero__ambient hero__ambient--two" data-parallax="0.025" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__kicker"><span></span> PREMIUM INTEGRATED CARE</p>
+        <h1 id="heroTitle">
+          <span class="text-mask"><span>당신의 건강한 오늘을</span></span>
+          <span class="text-mask"><span class="gradient-text">더 깊이 바라봅니다</span></span>
+        </h1>
+        <p class="hero__lead">정확한 진단과 섬세한 돌봄을 하나의 흐름으로.<br>세온은 진료의 순간부터 일상으로 돌아간 이후까지 함께합니다.</p>
+        <div class="hero__actions">
+          <a class="button button--primary magnetic" href="#services"><span>진료과목 보기</span><i aria-hidden="true">↗</i></a>
+          <a class="button button--text" href="#about"><span>세온 알아보기</span><i aria-hidden="true">↓</i></a>
+        </div>
+        <div class="hero__meta">
+          <div><small>MON — FRI</small><strong>09:00 — 19:00</strong></div>
+          <div><small>RESERVATION</small><strong>02.000.0000</strong></div>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-parallax="0.016">
+        <div class="hero__image-wrap">
+          <img src="./images/hero.jpg" alt="세온 메디컬센터의 밝고 현대적인 진료 공간과 의료진" width="1200" height="900">
+          <div class="hero__image-shade" aria-hidden="true"></div>
+        </div>
+        <div class="hero__floating hero__floating--top">
+          <span class="pulse-dot"></span>
+          <p><small>NOW OPEN</small>오늘도 정상 진료합니다</p>
+        </div>
+        <div class="hero__floating hero__floating--bottom">
+          <span class="mini-cross" aria-hidden="true"></span>
+          <p><strong>01</strong><small>PERSONALIZED<br>MEDICAL CARE</small></p>
+        </div>
+        <p class="hero__vertical">SEON · MEDICAL CENTER · SEOUL</p>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true"><span>SCROLL</span><i></i></div>
+      <p class="sample-chip">VELTOWEB PORTFOLIO · SAMPLE PROJECT</p>
+    </section>
+
+    <div class="text-marquee" aria-label="세온 메디컬센터 핵심 가치">
+      <div class="text-marquee__track">
+        <span>PRECISE CARE</span><i>✦</i><span>따뜻한 진료</span><i>✦</i><span>PREMIUM EXPERIENCE</span><i>✦</i><span>맞춤형 케어</span><i>✦</i>
+        <span>PRECISE CARE</span><i>✦</i><span>따뜻한 진료</span><i>✦</i><span>PREMIUM EXPERIENCE</span><i>✦</i><span>맞춤형 케어</span><i>✦</i>
+      </div>
+    </div>
+
+    <section class="about section" id="about">
+      <div class="section-orb section-orb--mint" aria-hidden="true"></div>
+      <div class="about__heading" data-reveal="up">
+        <p class="eyebrow"><span>01</span> ABOUT SEON</p>
+        <h2>환자의 진료를 넘어,<br><em>하루까지 생각하는 의료</em></h2>
+      </div>
+
+      <div class="about__grid">
+        <figure class="about__media image-reveal" data-reveal="clip">
+          <img src="./images/facility-01.jpg" alt="곡선과 자연광이 어우러진 세온 메디컬센터 내부" loading="lazy" width="1200" height="900">
+          <figcaption><span>SPACE 01</span>마음을 편안하게 하는 공간</figcaption>
+          <div class="about__seal" aria-hidden="true"><span>SEON<br>MEDICAL</span></div>
+        </figure>
+
+        <div class="about__copy" data-reveal="right">
+          <p class="about__lead">몸이 보내는 작은 신호를 놓치지 않는 것.<br>세온의 진료는 충분히 듣는 일에서 시작합니다.</p>
+          <p>각 분야 의료진이 함께 살피는 통합 협진과 개인의 생활 리듬을 고려한 맞춤 진료로, 필요한 치료를 정확한 순간에 제안합니다. 불필요한 과정보다 꼭 필요한 설명과 돌봄에 집중합니다.</p>
+          <a class="line-link" href="#special">세온의 진료 철학 <i aria-hidden="true">↗</i></a>
+        </div>
+      </div>
+
+      <div class="stats" aria-label="세온 메디컬센터 주요 수치">
+        <article class="stat" data-reveal="up" style="--delay:0ms">
+          <p><strong class="counter" data-target="15">0</strong><span>+</span></p>
+          <small>함께하는 의료진</small>
+        </article>
+        <article class="stat" data-reveal="up" style="--delay:90ms">
+          <p><strong class="counter" data-target="20000">0</strong><span>+</span></p>
+          <small>누적 진료 사례 · SAMPLE</small>
+        </article>
+        <article class="stat" data-reveal="up" style="--delay:180ms">
+          <p><strong class="counter" data-target="98">0</strong><span>%</span></p>
+          <small>환자 만족도 · SAMPLE</small>
+        </article>
+        <article class="stat" data-reveal="up" style="--delay:270ms">
+          <p><strong class="counter" data-target="12">0</strong><span>yr</span></p>
+          <small>축적된 의료 경험</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="services__top">
+        <div data-reveal="left">
+          <p class="eyebrow eyebrow--light"><span>02</span> MEDICAL SERVICES</p>
+          <h2>나에게 필요한 진료를<br>한곳에서 만나다</h2>
+        </div>
+        <p data-reveal="right">정확한 검사부터 회복과 관리까지,<br>분절되지 않는 진료 경험을 설계합니다.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card" data-reveal="up" style="--delay:0ms">
+          <img src="./images/treatment-01.jpg" alt="피부 상태를 세심하게 살피는 진료 환경" loading="lazy">
+          <div class="service-card__veil"></div><span class="service-card__num">01</span>
+          <div class="service-card__content"><small>DERMATOLOGY</small><h3>피부 클리닉</h3><p>피부 본연의 건강을 위한 정밀 진단과 맞춤 솔루션</p><i aria-hidden="true">↗</i></div>
+        </article>
+        <article class="service-card service-card--tall" data-reveal="up" style="--delay:70ms">
+          <img src="./images/treatment-02.jpg" alt="편안하고 현대적인 안티에이징 진료 공간" loading="lazy">
+          <div class="service-card__veil"></div><span class="service-card__num">02</span>
+          <div class="service-card__content"><small>ANTI-AGING</small><h3>안티에이징</h3><p>시간의 흐름을 섬세하게 고려한 자연스러운 케어</p><i aria-hidden="true">↗</i></div>
+        </article>
+        <article class="service-card service-card--mint" data-reveal="up" style="--delay:140ms">
+          <span class="service-card__symbol" aria-hidden="true"><b></b><b></b><b></b></span><span class="service-card__num">03</span>
+          <div class="service-card__content"><small>LASER CARE</small><h3>레이저 클리닉</h3><p>피부 타입에 맞춘 정교하고 안전한 레이저 프로그램</p><i aria-hidden="true">↗</i></div>
+        </article>
+        <article class="service-card service-card--blue" data-reveal="up" style="--delay:40ms">
+          <span class="service-card__symbol service-card__symbol--orbit" aria-hidden="true"><b></b><b></b><b></b></span><span class="service-card__num">04</span>
+          <div class="service-card__content"><small>BEAUTY CARE</small><h3>쁘띠 시술</h3><p>과하지 않게, 얼굴의 균형을 살리는 섬세한 디자인</p><i aria-hidden="true">↗</i></div>
+        </article>
+        <article class="service-card service-card--wide" data-reveal="up" style="--delay:110ms">
+          <img src="./images/facility-01.jpg" alt="프리미엄 건강검진 공간" loading="lazy">
+          <div class="service-card__veil"></div><span class="service-card__num">05</span>
+          <div class="service-card__content"><small>CHECK-UP</small><h3>프리미엄 건강검진</h3><p>생활 패턴과 위험 요인을 함께 분석하는 깊이 있는 검진</p><i aria-hidden="true">↗</i></div>
+        </article>
+        <article class="service-card service-card--ivory" data-reveal="up" style="--delay:180ms">
+          <span class="service-card__symbol service-card__symbol--plus" aria-hidden="true"><b></b><b></b></span><span class="service-card__num">06</span>
+          <div class="service-card__content"><small>PERSONAL CARE</small><h3>1:1 맞춤 진료</h3><p>검사 결과와 일상을 함께 보는 개인별 건강 로드맵</p><i aria-hidden="true">↗</i></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="doctor section" id="doctors">
+      <div class="doctor__index" aria-hidden="true">DOCTOR<br>01</div>
+      <div class="doctor__portrait image-reveal" data-reveal="clip">
+        <img src="./images/doctor-01.jpg" alt="세온 메디컬센터 김도윤 대표원장 가상 프로필" loading="lazy" width="960" height="1200">
+        <p>SEON MEDICAL CENTER<br>MEDICAL DIRECTOR</p>
+      </div>
+      <div class="doctor__copy">
+        <p class="eyebrow" data-reveal="up"><span>03</span> MEDICAL TEAM</p>
+        <blockquote data-reveal="up">“환자 한 분 한 분에게<br>지금 <em>정말 필요한 진료</em>가<br>무엇인지 먼저 고민합니다.”</blockquote>
+        <div class="doctor__name" data-reveal="up"><h2>김도윤 <small>대표원장</small></h2><p>피부과 · 안티에이징 · 맞춤형 통합 케어</p></div>
+        <ul class="doctor__career" data-reveal="up">
+          <li><span>01</span>세온 메디컬센터 대표원장 <small>가상 경력</small></li>
+          <li><span>02</span>대한피부과학회 정회원 <small>SAMPLE</small></li>
+          <li><span>03</span>프리미엄 안티에이징 프로그램 디렉터 <small>SAMPLE</small></li>
+        </ul>
+        <p class="sample-note" data-reveal="up">※ 본 의료진과 경력은 포트폴리오를 위해 만든 가상의 정보입니다.</p>
+      </div>
+    </section>
+
+    <section class="special section" id="special">
+      <div class="special__intro">
+        <div class="special__sticky">
+          <p class="eyebrow" data-reveal="up"><span>04</span> WHY SEON</p>
+          <h2 data-reveal="up">우리 병원이<br><em>특별한 이유</em></h2>
+          <p data-reveal="up">작은 차이가 진료의 경험을 바꿉니다.<br>세온이 끝까지 지키는 네 가지 기준입니다.</p>
+          <div class="special__line" aria-hidden="true"><span></span></div>
+        </div>
+      </div>
+      <div class="special__list">
+        <article class="reason" data-reveal="right"><span>01</span><div><small>PERSONALIZED</small><h3>1:1 맞춤 진료</h3><p>검사 수치만이 아니라 생활 습관과 고민까지 충분히 듣고 개인별 진료 방향을 설계합니다.</p></div><i aria-hidden="true">↗</i></article>
+        <article class="reason" data-reveal="right"><span>02</span><div><small>EXPERIENCE</small><h3>풍부한 의료 경험</h3><p>각 분야 의료진의 축적된 경험과 협진을 바탕으로 더 정확하고 균형 잡힌 판단을 내립니다.</p></div><i aria-hidden="true">↗</i></article>
+        <article class="reason" data-reveal="right"><span>03</span><div><small>TECHNOLOGY</small><h3>정밀 의료 시스템</h3><p>신뢰할 수 있는 검사 장비와 체계적인 프로세스로 진단부터 치료까지 빈틈없이 연결합니다.</p></div><i aria-hidden="true">↗</i></article>
+        <article class="reason" data-reveal="right"><span>04</span><div><small>AFTER CARE</small><h3>체계적인 사후관리</h3><p>진료실을 나선 이후에도 회복 과정과 변화를 세심하게 확인하며 건강한 일상을 돕습니다.</p></div><i aria-hidden="true">↗</i></article>
+      </div>
+    </section>
+
+    <section class="impact" id="philosophy">
+      <div class="impact__glow impact__glow--one" aria-hidden="true"></div>
+      <div class="impact__glow impact__glow--two" aria-hidden="true"></div>
+      <div class="impact__inner">
+        <p class="impact__eyebrow">BEYOND HEALTH · BETTER LIFE</p>
+        <h2 aria-label="건강을 넘어, 삶의 변화를 생각합니다.">
+          <span class="impact-word">건강을</span> <span class="impact-word">넘어,</span><br>
+          <span class="impact-word">삶의</span> <span class="impact-word impact-word--accent">변화를</span><br>
+          <span class="impact-word">생각합니다.</span>
+        </h2>
+        <p>오늘의 치료가 내일의 더 좋은 일상으로 이어지도록</p>
+      </div>
+    </section>
+
+    <section class="space section" id="space">
+      <div class="space__heading">
+        <div data-reveal="left"><p class="eyebrow"><span>05</span> OUR SPACE</p><h2>머무는 순간까지<br>편안한 공간</h2></div>
+        <div class="space__controls" data-reveal="right"><button type="button" data-gallery="prev" aria-label="이전 시설 사진">←</button><button type="button" data-gallery="next" aria-label="다음 시설 사진">→</button></div>
+      </div>
+      <div class="gallery" id="gallery" tabindex="0" aria-label="병원 시설 사진 갤러리">
+        <figure class="gallery-card gallery-card--wide"><div class="gallery-card__image"><img src="./images/facility-01.jpg" alt="곡선형 벽과 자연광이 있는 로비" loading="lazy"></div><figcaption><span>01</span><div><h3>웰컴 라운지</h3><p>WELCOME LOUNGE</p></div></figcaption></figure>
+        <figure class="gallery-card"><div class="gallery-card__image"><img src="./images/hero.jpg" alt="차분한 분위기의 상담 공간" loading="lazy"></div><figcaption><span>02</span><div><h3>프라이빗 상담실</h3><p>PRIVATE CONSULTATION</p></div></figcaption></figure>
+        <figure class="gallery-card gallery-card--wide"><div class="gallery-card__image"><img src="./images/facility-02.jpg" alt="청결하고 현대적인 진료실" loading="lazy"></div><figcaption><span>03</span><div><h3>정밀 진료실</h3><p>MEDICAL ROOM</p></div></figcaption></figure>
+        <figure class="gallery-card"><div class="gallery-card__image"><img src="./images/facility-03.jpg" alt="편안한 회복 라운지" loading="lazy"></div><figcaption><span>04</span><div><h3>회복 라운지</h3><p>RECOVERY LOUNGE</p></div></figcaption></figure>
+      </div>
+      <p class="gallery-hint"><span>DRAG</span> 옆으로 밀어 공간을 살펴보세요</p>
+    </section>
+
+    <section class="reviews section" aria-labelledby="reviewTitle">
+      <div class="reviews__heading" data-reveal="up">
+        <p class="eyebrow eyebrow--center"><span>06</span> PATIENT VOICE</p>
+        <h2 id="reviewTitle">마음을 먼저 살핀 진료의 기록</h2>
+        <p>아래 후기는 디자인 확인을 위한 포트폴리오용 SAMPLE 문구입니다.</p>
+      </div>
+      <div class="review-marquee">
+        <div class="review-track">
+          <article class="review-card"><span>SAMPLE REVIEW</span><div class="stars" aria-label="별점 5점">★★★★★</div><p>“설명을 서두르지 않고 제 생활 습관까지 세심하게 물어봐 주셔서 진료 방향을 이해하기 쉬웠어요.”</p><footer><b>20대 직장인</b><small>맞춤 진료 · 가상 후기</small></footer></article>
+          <article class="review-card"><span>SAMPLE REVIEW</span><div class="stars" aria-label="별점 5점">★★★★★</div><p>“병원 특유의 긴장감이 거의 느껴지지 않는 공간이었고, 예약부터 안내까지 무척 차분했습니다.”</p><footer><b>30대 고객</b><small>피부 클리닉 · 가상 후기</small></footer></article>
+          <article class="review-card"><span>SAMPLE REVIEW</span><div class="stars" aria-label="별점 5점">★★★★★</div><p>“필요한 검사와 그렇지 않은 검사를 분명히 알려줘서 신뢰가 갔고 사후 안내도 꼼꼼했어요.”</p><footer><b>40대 자영업자</b><small>건강검진 · 가상 후기</small></footer></article>
+          <article class="review-card"><span>SAMPLE REVIEW</span><div class="stars" aria-label="별점 5점">★★★★★</div><p>“결과만 이야기하는 대신 앞으로 어떻게 관리하면 좋을지 현실적으로 알려주셔서 도움이 됐습니다.”</p><footer><b>30대 보호자</b><small>통합 케어 · 가상 후기</small></footer></article>
+          <article class="review-card" aria-hidden="true"><span>SAMPLE REVIEW</span><div class="stars">★★★★★</div><p>“설명을 서두르지 않고 제 생활 습관까지 세심하게 물어봐 주셔서 진료 방향을 이해하기 쉬웠어요.”</p><footer><b>20대 직장인</b><small>맞춤 진료 · 가상 후기</small></footer></article>
+          <article class="review-card" aria-hidden="true"><span>SAMPLE REVIEW</span><div class="stars">★★★★★</div><p>“병원 특유의 긴장감이 거의 느껴지지 않는 공간이었고, 예약부터 안내까지 무척 차분했습니다.”</p><footer><b>30대 고객</b><small>피부 클리닉 · 가상 후기</small></footer></article>
+          <article class="review-card" aria-hidden="true"><span>SAMPLE REVIEW</span><div class="stars">★★★★★</div><p>“필요한 검사와 그렇지 않은 검사를 분명히 알려줘서 신뢰가 갔고 사후 안내도 꼼꼼했어요.”</p><footer><b>40대 자영업자</b><small>건강검진 · 가상 후기</small></footer></article>
+          <article class="review-card" aria-hidden="true"><span>SAMPLE REVIEW</span><div class="stars">★★★★★</div><p>“결과만 이야기하는 대신 앞으로 어떻게 관리하면 좋을지 현실적으로 알려주셔서 도움이 됐습니다.”</p><footer><b>30대 보호자</b><small>통합 케어 · 가상 후기</small></footer></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact__card contact__card--time" data-reveal="left">
+        <p class="eyebrow"><span>07</span> INFORMATION</p>
+        <h2>진료 안내</h2>
+        <dl class="hours">
+          <div><dt>평일</dt><dd>09:00 — 19:00</dd></div>
+          <div><dt>토요일</dt><dd>09:00 — 14:00</dd></div>
+          <div><dt>점심시간</dt><dd>13:00 — 14:00</dd></div>
+          <div><dt>일요일 · 공휴일</dt><dd>휴진</dd></div>
+        </dl>
+        <p class="contact__notice"><span>!</span>토요일은 점심시간 없이 진료합니다.</p>
+      </div>
+      <div class="contact__card contact__card--cta" data-reveal="right">
+        <div class="contact__orb" aria-hidden="true"></div>
+        <small>RESERVATION &amp; COUNSEL</small>
+        <h2>당신의 건강한 내일,<br>지금 상담해 보세요.</h2>
+        <a class="contact__phone" href="tel:0200000000">02.000.0000 <i aria-hidden="true">↗</i></a>
+        <a class="button button--light magnetic sample-action" href="#contact"><span>온라인 상담 문의</span><i aria-hidden="true">→</i></a>
+        <p>※ 포트폴리오용 가상 전화번호로 실제 연결되지 않습니다.</p>
+      </div>
+    </section>
+
+    <section class="location section" id="location">
+      <div class="location__info">
+        <p class="eyebrow" data-reveal="up"><span>08</span> LOCATION</p>
+        <h2 data-reveal="up">세온으로<br>오시는 길</h2>
+        <div class="location__details" data-reveal="up">
+          <div><small>ADDRESS</small><p>서울특별시 강남구 테헤란로 000<br>세온 메디컬타워 3F — 7F</p></div>
+          <div><small>SUBWAY</small><p>2호선 세온역 3번 출구 도보 3분<br><span>※ 포트폴리오용 가상 주소입니다.</span></p></div>
+          <div><small>PARKING</small><p>건물 지하 주차장 이용 가능<br>진료 시 2시간 무료</p></div>
+        </div>
+        <a class="line-link" href="#home">처음으로 돌아가기 <i aria-hidden="true">↑</i></a>
+      </div>
+      <div class="map" data-reveal="clip" role="img" aria-label="가상의 세온 메디컬센터 위치를 표현한 지도 디자인">
+        <div class="map__grid" aria-hidden="true"></div>
+        <span class="road road--one" aria-hidden="true"></span><span class="road road--two" aria-hidden="true"></span><span class="road road--three" aria-hidden="true"></span>
+        <span class="map__place map__place--one">SEON STATION</span><span class="map__place map__place--two">CITY PARK</span><span class="map__place map__place--three">TEHERAN-RO</span>
+        <div class="map__pin"><span class="brand__mark">S</span><p><strong>세온 메디컬센터</strong><small>3F — 7F</small></p></div>
+        <p class="map__sample">MAP PLACEHOLDER · SAMPLE LOCATION</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div><a class="brand brand--footer" href="#home"><span class="brand__mark">S</span><span class="brand__text"><strong>세온</strong><small>MEDICAL CENTER</small></span></a><p>진료의 순간부터 건강한 일상까지,<br>세온이 더 깊이 함께합니다.</p></div>
+      <div class="footer__nav"><div><small>MENU</small><a href="#about">병원소개</a><a href="#doctors">의료진 소개</a><a href="#services">진료과목</a><a href="#space">병원시설</a></div><div><small>CONTACT</small><a href="tel:0200000000">02.000.0000</a><a href="#location">서울 강남구 테헤란로 000</a><a href="#contact">평일 09:00 — 19:00</a></div><div><small>SOCIAL</small><a href="#footer">Instagram ↗</a><a href="#footer">Blog ↗</a><a href="#footer">YouTube ↗</a></div></div>
+    </div>
+    <div class="footer__giant" aria-hidden="true">SEON</div>
+    <div class="footer__bottom" id="footer"><p>© <span id="currentYear">2026</span> SEON MEDICAL CENTER. ALL RIGHTS RESERVED.</p><p>VELTOWEB PORTFOLIO · FICTIONAL SAMPLE PROJECT</p><a href="#home">BACK TO TOP ↑</a></div>
+  </footer>
+
+  <a class="floating-care magnetic" href="#contact" aria-label="상담 문의하기"><span>상담<br>문의</span><i aria-hidden="true">↗</i></a>
+  <button class="back-top" id="backTop" type="button" aria-label="페이지 맨 위로 이동">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite">포트폴리오용 샘플 버튼입니다.</div>
+</body>
+</html>
