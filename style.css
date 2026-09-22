@@ -194,9 +194,13 @@ ul { margin: 0; padding: 0; list-style: none; }
   transition-delay: var(--delay, 0ms);
 }
 .js [data-reveal="clip"].in-view img { clip-path: inset(0 0 0 0 round var(--radius)); transform: scale(1.001); }
-.js .map[data-reveal="clip"] { transform: scale(1.04); clip-path: inset(0 100% 0 0 round var(--radius)); }
-.js .map[data-reveal="clip"].in-view { transform: scale(1); clip-path: inset(0 0 0 0 round var(--radius)); }
 .js [data-reveal].in-view { opacity: 1; transform: translate(0) scale(1); clip-path: inset(0 0 0 0 round var(--radius)); }
+.js .map[data-reveal="clip"],
+.js .map[data-reveal="clip"].in-view {
+  opacity: 1;
+  transform: none;
+  clip-path: none;
+}
 .section-orb { position: absolute; z-index: -1; border-radius: 50%; filter: blur(80px); pointer-events: none; }
 .section-orb--mint { top: 9%; right: -8%; width: 38vw; height: 38vw; background: rgba(168,234,223,.22); }
 
