@@ -34,6 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let toastTimer;
 
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+  const resetPageX = () => {
+    document.documentElement.scrollLeft = 0;
+    document.body.scrollLeft = 0;
+  };
+  resetPageX();
+  window.addEventListener('orientationchange', () => window.setTimeout(resetPageX, 120));
 
   /* Intro: 2–3 second brand sequence, then curtain reveal */
   const completeIntro = (instant = false) => {
@@ -68,8 +74,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const sectionProgress = clamp(-rect.top / travel, 0, 1);
 
     impactWords.forEach((word, index) => {
-      const threshold = 0.1 + index * (0.66 / impactWords.length);
-      word.classList.toggle('is-lit', sectionProgress >= threshold);
+      const start = 0.1 + index * 0.13;
+      const wordProgress = clamp((sectionProgress - start) / 0.14, 0, 1);
+      word.style.setProperty('--word-opacity', (0.12 + wordProgress * 0.88).toFixed(3));
+      word.style.setProperty('--word-y', `${(25 * (1 - wordProgress)).toFixed(2)}px`);
+      word.style.setProperty('--word-blur', `${(8 * (1 - wordProgress)).toFixed(2)}px`);
     });
   };
 
@@ -122,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entry.target.classList.add('in-view');
         observer.unobserve(entry.target);
       });
-    }, { threshold: 0.14, rootMargin: '0px 0px -7% 0px' });
+    }, { threshold: 0.05, rootMargin: '0px 0px -3% 0px' });
     revealItems.forEach((item) => revealObserver.observe(item));
   } else {
     revealItems.forEach((item) => item.classList.add('in-view'));
